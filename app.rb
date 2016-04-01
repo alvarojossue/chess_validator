@@ -13,12 +13,16 @@ wr_right = Rook.new(8, 1, "white")
 white_king = King.new(5, 1, "white")
 black_king = King.new(5, 8, "black")
 
-# white_bishop_right = Bishop.new(6, 1, "white")
-# white_bishop_left = Bishop.new(3, 1, "white")
-# black_bishop_right = Bishop.new(6, 8, "white")
-# black_bishop_left = Bishop.new(3, 8, "white")
+white_bishop_right = Bishop.new(4, 3, "white")
+white_bishop_left = Bishop.new(5, 4, "white")
+black_bishop_right = Bishop.new(6, 7, "white")
+black_bishop_left = Bishop.new(4, 7, "white")
+
+
 
 # Rook tests
+
+
 
 puts "\nRook tests:"
 puts "-------------"
@@ -37,7 +41,11 @@ puts "These should be false:"
 puts wr_left.move?(2,2)
 puts wr_right.move?(7,2)
 
+
+
 # King tests
+
+
 
 puts "\nKing tests:"
 puts "-------------"
@@ -74,6 +82,23 @@ puts "These should be false:"
 
 puts white_king.move?(6,3)
 puts black_king.move?(6,6)
+
+
+
+#Bishop tests
+
+puts "\nBishop tests:"
+puts "-------------"
+puts "These should be true:"
+
+
+puts white_bishop_right.move?(6, 5)
+
+puts white_bishop_left.move?(7, 2)
+
+puts black_bishop_right.move?(7, 8)
+
+puts black_bishop_left.move?(5, 8)
 
 
 
